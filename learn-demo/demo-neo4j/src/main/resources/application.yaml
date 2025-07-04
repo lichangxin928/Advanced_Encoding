@@ -1,0 +1,12 @@
+server:
+  port: 9990
+  servlet:
+    context-path: /demo-neo4j
+spring:
+  application:
+    name: demo-neo4j
+  neo4j:
+    uri: bolt://172.27.1.165:7687
+    authentication:
+      username: neo4j
+      password: seadee

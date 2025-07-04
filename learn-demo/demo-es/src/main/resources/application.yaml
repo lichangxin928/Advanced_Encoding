@@ -1,0 +1,11 @@
+server:
+  port: 8891
+  servlet:
+    context-path: /demo-es
+
+mybatis-plus:
+  type-aliases-package: com.lcx.entity
+  mapper-locations:  classpath:mybatis/mapper/*.xml
+spring:
+  application:
+    name: demo-es

@@ -1,0 +1,17 @@
+server:
+  port: 8889
+  servlet:
+    context-path: /demo-rabbitmq
+
+mybatis-plus:
+  type-aliases-package: com.lcx.entity
+  mapper-locations:  classpath:mybatis/mapper/*.xml
+spring:
+  application:
+    name: demo-rabbitmq
+  rabbitmq:
+    addresses: 127.0.0.1
+    port: 5672
+    username: admin
+    password: admin
+    publisher-confirm-type: correlated

@@ -1,0 +1,1 @@
+[Xshell 脚本学习](https://www.runoob.com/linux/linux-shell-variable.html)

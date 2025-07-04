@@ -1,0 +1,33 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /web-server
+
+mybatis-plus:
+  type-aliases-package: com.lcx.entity
+  mapper-locations:  classpath:mybatis/mapper/*.xml
+spring:
+  application:
+    name: web-server
+  datasource:
+    driver: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.232.20:13306/web-server?useUnicode=true&characterEncoding=utf-8&serverTimezone
+    username: root
+    password: 123
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: Asia/Shanghai
+  redis:
+    host: 106.14.242.94
+    port: 6888
+    password: 123
+    #    host: 127.0.0.1
+    #    port: 6379
+    #    password:
+    database: 0
+    timeout: 30000
+    pool:
+      max-active: 200 #最大连接数
+      max-idle: 100 #最大空闲连接数
+      max-wait: 3000 #最大等待时间
+      min-idle: 50
